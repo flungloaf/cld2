@@ -1,3 +1,5 @@
+//+build !cld2_disable
+
 package cld2
 
 import (
