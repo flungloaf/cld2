@@ -124,41 +124,23 @@ func TestDetectShortEstimates(t *testing.T) {
 	}
 }
 
-func TestLanguageFromCode(t *testing.T) {
-	l := LanguageFromCode("da")
-	if l != DANISH {
-		t.Error("expected 'da' code to return Danish, got %s", l.String())
-	}
-
-	l = LanguageFromCode("something")
-	if l != UNKNOWN_LANGUAGE {
-		t.Error("expected 'something' code to return Unknown Language, got %s", l.String())
-	}
-
-	l = LanguageFromCode("un")
-	if l != UNKNOWN_LANGUAGE {
-		t.Error("expected 'something' code to return Unknown Language, got %s", l.String())
-	}
-}
-
 func BenchmarkDetectLong(b *testing.B) {
 	b.SetBytes(int64(len(dkText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = Detect(dkText)
 	}
 }
 
-
 func BenchmarkDetectLangLong(b *testing.B) {
 	b.SetBytes(int64(len(dkText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = DetectLang(dkText)
 	}
 }
 
 func BenchmarkDetectThreeLong(b *testing.B) {
 	b.SetBytes(int64(len(dkText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = DetectThree(dkText)
 	}
 }
@@ -167,22 +149,21 @@ var shortText = `Freuen Sie sich auf eine Berlin-Story zur Wiedervereinigung und
 
 func BenchmarkDetectShort(b *testing.B) {
 	b.SetBytes(int64(len(shortText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = Detect(shortText)
 	}
 }
 
-
 func BenchmarkDetectLangShort(b *testing.B) {
 	b.SetBytes(int64(len(shortText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = DetectLang(shortText)
 	}
 }
 
 func BenchmarkDetectThreeShort(b *testing.B) {
 	b.SetBytes(int64(len(shortText)))
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		_ = DetectThree(shortText)
 	}
 }
