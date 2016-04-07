@@ -13,6 +13,8 @@ type Estimate struct {
 	NormScore float64
 }
 
+// Language is a single language.
+// Note that the zero value is "ENGLISH".
 type Language uint16
 
 // Languages are probable languages of the supplied text
@@ -28,6 +30,16 @@ func (l Language) String() string {
 
 func (l Language) Code() string {
 	return languageToCode[int(l)]
+}
+
+// NewLanguage supplies a safe way of returning a uint16
+// to a Language.
+// If an invalid id is supplied, UNKNOWN_LANGUAGE is returned.
+func NewLanguage(id uint16) Language {
+	if id >= uint16(NUM_LANGUAGES) {
+		return UNKNOWN_LANGUAGE
+	}
+	return Language(id)
 }
 
 // LanguageFromCode returns the language associated with the
