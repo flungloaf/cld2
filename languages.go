@@ -25,7 +25,7 @@ type Languages struct {
 }
 
 func (l Language) String() string {
-	return strings.Title(strings.ToLower(languageToCName[int(l)]))
+	return strings.Replace(strings.Title(strings.ToLower(languageToCName[int(l)])), "_", " ", -1)
 }
 
 func (l Language) Code() string {
