@@ -17,6 +17,8 @@
 // 32- or 16-bit Unicode values.
 //
 
+// +build cgo 
+
 #ifdef COMPILER_MSVC
 // MSVC warns: warning C4309: 'initializing' : truncation of constant value
 // But the value is in fact not truncated.  0xFF still comes out 0xFF at

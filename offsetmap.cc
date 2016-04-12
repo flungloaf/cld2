@@ -17,6 +17,8 @@
 //
 //
 
+// +build cgo 
+
 #include "offsetmap.h"
 
 #include <string.h>                     // for strcmp

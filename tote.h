@@ -16,6 +16,8 @@
 // Author: dsites@google.com (Dick Sites)
 //
 
+// +build cgo 
+
 #ifndef I18N_ENCODINGS_CLD2_INTERNAL_TOTE_H_
 #define I18N_ENCODINGS_CLD2_INTERNAL_TOTE_H_
 

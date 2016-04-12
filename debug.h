@@ -17,6 +17,7 @@
 //
 // Produces debugging output for CLD2. See debug_empty.h for suppressing this.
 
+// +build cgo 
 
 #ifndef I18N_ENCODINGS_CLD2_INTERNAL_DEBUG_H_
 #define I18N_ENCODINGS_CLD2_INTERNAL_DEBUG_H_

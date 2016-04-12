@@ -1,3 +1,5 @@
+// +build cgo 
+
 #include <cstddef>
 #include <string.h>
 #include <stdio.h>

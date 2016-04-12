@@ -18,6 +18,8 @@
 // Declarations for scripts recognized by CLD2
 //
 
+// +build cgo 
+
 #include "generated_ulscript.h"
 #include "generated_language.h"
 

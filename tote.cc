@@ -16,6 +16,9 @@
 // Author: dsites@google.com (Dick Sites)
 //
 
+// +build cgo 
+
+
 #include "tote.h"
 #include "lang_script.h"    // For LanguageCode in Dump
 

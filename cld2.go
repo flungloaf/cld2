@@ -1,4 +1,4 @@
-//+build !cld2_disable
+//+build !cld2_disable,cgo
 
 // Package cld2 implements language detection using the
 // Compact Language Detector.

@@ -32,6 +32,8 @@
 // 
 // See compact_lang_det.cc for usage
 // 
+// +build cgo 
+
 #include "cld2tablesummary.h"
 namespace CLD2 {
 

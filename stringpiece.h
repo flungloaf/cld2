@@ -18,6 +18,8 @@
 // string to which it points.  A StringPiece is not null-terminated. [subset]
 //
 
+// +build cgo 
+
 #ifndef STRINGS_STRINGPIECE_H_
 #define STRINGS_STRINGPIECE_H_
 

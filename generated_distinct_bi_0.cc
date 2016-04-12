@@ -12,9 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// +build cgo 
+
 //
 // Degenerate CLD2 scoring lookup table, for use as placeholder
 //
+
+
 #include "cld2tablesummary.h"
 
 namespace CLD2 {

@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// +build cgo 
+
 //
 // Author: dsites@google.com (Dick Sites)
 // Updated 2014.01 for dual table lookup

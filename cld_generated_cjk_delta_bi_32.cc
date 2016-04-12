@@ -16,6 +16,8 @@
 // From input file /tmp/langdet_v25_12cjk_sort.utf8
 // See compact_lang_det.cc for usage
 //
+// +build cgo 
+
 #include "cld2tablesummary.h"
 
 namespace CLD2 {

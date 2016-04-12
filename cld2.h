@@ -1,3 +1,5 @@
+// +build cgo 
+
 #ifdef __cplusplus
 extern "C" {
 #endif

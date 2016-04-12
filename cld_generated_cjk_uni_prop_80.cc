@@ -26,6 +26,8 @@
 //  multiplied by 16; offsets for 3-of-3 and 4-of-4 are
 //  relative +/-127 from previous state.
 
+// +build cgo 
+
 #include "utf8statetable.h"
 
 namespace CLD2 {

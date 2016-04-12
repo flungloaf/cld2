@@ -16,6 +16,8 @@
 // Author: dsites@google.com (Dick Sites)
 //
 
+// +build cgo 
+
 // NOTE:
 // Baybayin (ancient script of the Philippines) is detected as TAGALOG.
 // Chu Nom (Vietnamese ancient Han characters) is detected as VIETNAMESE.

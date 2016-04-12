@@ -25,6 +25,8 @@
 //  Table entries are absolute statetable subscripts
 //  Table entries are two bytes each
 
+// +build cgo 
+
 #ifndef UTF8PROP_LETTERMARKSCRIPTNUM_H__
 #define UTF8PROP_LETTERMARKSCRIPTNUM_H__
 

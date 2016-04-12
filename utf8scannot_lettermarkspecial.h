@@ -24,6 +24,8 @@
 //
 //  Table entries are absolute statetable subscripts
 
+// +build cgo 
+
 #ifndef UTF8SCANNOT_LETTERMARKSPECIAL_H__
 #define UTF8SCANNOT_LETTERMARKSPECIAL_H__
 

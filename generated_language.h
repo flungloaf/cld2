@@ -18,6 +18,8 @@
 // Declarations for languages recognized by CLD2
 //
 
+// +build cgo 
+
 #ifndef I18N_ENCODINGS_CLD2_INTERNAL_GENERATED_LANGUAGE_H__
 #define I18N_ENCODINGS_CLD2_INTERNAL_GENERATED_LANGUAGE_H__
 

@@ -21,6 +21,8 @@
 // ak haw ig kha ks mfe mo nd nso ny ve
 // bs-Cyrl/Latn hr-Latn sr-Cyrl/Latn sr-ME-Latn
 
+// +build cgo 
+
 
 namespace CLD2 {
 

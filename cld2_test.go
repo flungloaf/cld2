@@ -1,4 +1,4 @@
-//+build !cld2_disable
+//+build !cld2_disable,cgo
 
 package cld2
 

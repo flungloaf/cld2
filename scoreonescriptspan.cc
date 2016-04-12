@@ -17,6 +17,8 @@
 // Updated 2014.01 for dual table lookup
 //
 
+// +build cgo 
+
 #include "scoreonescriptspan.h"
 
 #include "cldutil.h"

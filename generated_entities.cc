@@ -17,6 +17,9 @@
 //
 // Declarations for HTML entities recognized by CLD2
 //
+
+// +build cgo 
+
 #include "generated_ulscript.h"  // for CharIntPair
 
 namespace CLD2 {

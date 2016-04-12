@@ -16,6 +16,8 @@
 // These are weird things we need to do to get this compiling on
 // random systems [subset].
 
+// +build cgo 
+
 #ifndef BASE_PORT_H_
 #define BASE_PORT_H_
 

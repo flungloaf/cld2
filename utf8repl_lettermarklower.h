@@ -24,6 +24,8 @@
 //
 //  Table entries are absolute statetable subscripts
 
+// +build cgo 
+
 #ifndef UTF8REPL_LETTERMARKLOWER_H__
 #define UTF8REPL_LETTERMARKLOWER_H__
 

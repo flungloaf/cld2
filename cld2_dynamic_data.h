@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and                              
 // limitations under the License.
 
+// +build cgo 
+
 #ifndef CLD2_INTERNAL_CLD2_DYNAMIC_DATA_H_
 #define CLD2_INTERNAL_CLD2_DYNAMIC_DATA_H_
 

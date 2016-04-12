@@ -18,6 +18,7 @@
 //  Compile with -Davoid_utf8_string_constants if your compiler cannot
 //  handle UTF-8 string constants
 
+// +build cgo 
 
 #ifndef I18N_ENCODINGS_COMPACT_LANG_DET_UNITTEST_DATA_H_
 #define I18N_ENCODINGS_COMPACT_LANG_DET_UNITTEST_DATA_H_

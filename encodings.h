@@ -16,6 +16,8 @@
 // Author: dsites@google.com (Dick Sites)
 //
 
+// +build cgo 
+
 #ifndef I18N_ENCODINGS_CLD2_PUBLIC_ENCODINGS_H__
 #define I18N_ENCODINGS_CLD2_PUBLIC_ENCODINGS_H__
 

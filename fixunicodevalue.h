@@ -19,6 +19,7 @@
 // code points. C0 and C1 control codes that are not interchange-valid
 // are mapped to spaces.
 
+// +build cgo 
 
 #ifndef I18N_ENCODINGS_CLD2_INTERNAL_FIXUNICODEVALUE_H__
 #define I18N_ENCODINGS_CLD2_INTERNAL_FIXUNICODEVALUE_H__

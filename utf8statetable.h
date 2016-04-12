@@ -19,6 +19,8 @@
 // Author: dsites@google.com (Dick Sites)
 //
 
+// +build cgo 
+
 #ifndef UTIL_UTF8_UTF8STATETABLE_H_
 #define UTIL_UTF8_UTF8STATETABLE_H_
 
