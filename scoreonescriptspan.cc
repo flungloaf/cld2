@@ -17,13 +17,12 @@
 // Updated 2014.01 for dual table lookup
 //
 
-// +build cgo 
-
 #include "scoreonescriptspan.h"
 
 #include "cldutil.h"
 #include "debug.h"
 #include "lang_script.h"
+#include <stdint.h>
 
 #include <stdio.h>
 
@@ -380,7 +379,7 @@ uint16 NextChunkLang(const SummaryBuffer* summarybuffer, int i) {
 //
 // We go out of our way to minimize the variation in the ResultChunkVector,
 // so that the caller has fewer but more meaningful spans in different
-// lanaguges, for the likely purpose of translation or spell-check.
+// languages, for the likely purpose of translation or spell-check.
 //
 // The language of each chunk is lang1, but it might be unreliable for
 // either of two reasons: its score is relatively too close to the score of
@@ -438,6 +437,7 @@ void SummaryBufferToVector(ScriptScanner* scanner, const char* text,
       if (n >= n_limit) {n = 0;} // New boundary not found within range
 
       // Also back up exactly one leading punctuation character if '"#@
+      // 'random', "quotes", #hashtags, @handles
       if (n < n_limit) {
         unsigned char c = us[-n - 1];
         if ((c == '\'') || (c == '"') || (c == '#') || (c == '@')) {++n;}
@@ -1144,8 +1144,8 @@ void ScoreEntireScriptSpan(const LangSpan& scriptspan,
   if (scoringcontext->flags_cld2_html) {
     ChunkSummary chunksummary = {
       1, 0,
-      one_one_lang, UNKNOWN_LANGUAGE, score, 1,
-      bytes, 0, scriptspan.ulscript, reliability, reliability
+      static_cast<uint8>(one_one_lang), UNKNOWN_LANGUAGE, static_cast<uint8>(score), 1,
+      static_cast<uint8>(bytes), 0, static_cast<uint8>(scriptspan.ulscript), static_cast<uint8>(reliability), static_cast<uint8>(reliability)
     };
     CLD2_Debug(scriptspan.text, 1, scriptspan.text_bytes,
                false, false, NULL,
